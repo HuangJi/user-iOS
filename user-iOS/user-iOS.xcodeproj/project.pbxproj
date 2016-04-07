@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E711CB5470B0009F726 /* AppDelegate.swift */; };
-		F44A3E741CB5470B0009F726 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E731CB5470B0009F726 /* ViewController.swift */; };
 		F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E751CB5470B0009F726 /* Main.storyboard */; };
 		F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E781CB5470B0009F726 /* Assets.xcassets */; };
 		F44A3E7C1CB5470B0009F726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E7A1CB5470B0009F726 /* LaunchScreen.storyboard */; };
 		F44A3E871CB5470C0009F726 /* user_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E861CB5470C0009F726 /* user_iOSTests.swift */; };
 		F44A3E921CB5470C0009F726 /* user_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E911CB5470C0009F726 /* user_iOSUITests.swift */; };
+		F44A3EA01CB642360009F726 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		F44A3E6E1CB5470B0009F726 /* user-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "user-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A3E711CB5470B0009F726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F44A3E731CB5470B0009F726 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F44A3E761CB5470B0009F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F44A3E781CB5470B0009F726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F44A3E7B1CB5470B0009F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		F44A3E8D1CB5470C0009F726 /* user-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "user-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A3E911CB5470C0009F726 /* user_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user_iOSUITests.swift; sourceTree = "<group>"; };
 		F44A3E931CB5470C0009F726 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = Controller/MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				F44A3E711CB5470B0009F726 /* AppDelegate.swift */,
-				F44A3E731CB5470B0009F726 /* ViewController.swift */,
 				F44A3E751CB5470B0009F726 /* Main.storyboard */,
 				F44A3E781CB5470B0009F726 /* Assets.xcassets */,
 				F44A3E7A1CB5470B0009F726 /* LaunchScreen.storyboard */,
 				F44A3E7D1CB5470C0009F726 /* Info.plist */,
+				F44A3EA21CB642450009F726 /* Controller */,
 			);
 			path = "user-iOS";
 			sourceTree = "<group>";
@@ -123,6 +123,14 @@
 				F44A3E931CB5470C0009F726 /* Info.plist */,
 			);
 			path = "user-iOSUITests";
+			sourceTree = "<group>";
+		};
+		F44A3EA21CB642450009F726 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F44A3E741CB5470B0009F726 /* ViewController.swift in Sources */,
+				F44A3EA01CB642360009F726 /* MainTabBarViewController.swift in Sources */,
 				F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +490,7 @@
 				F44A3E981CB5470C0009F726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44A3E991CB5470C0009F726 /* Build configuration list for PBXNativeTarget "user-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				F44A3E9B1CB5470C0009F726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F44A3E9C1CB5470C0009F726 /* Build configuration list for PBXNativeTarget "user-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				F44A3E9E1CB5470C0009F726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
