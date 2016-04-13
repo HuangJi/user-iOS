@@ -8,6 +8,8 @@
 
 import UIKit
 
+let centerButton = UIButton(type: .Custom);
+
 class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
@@ -20,13 +22,42 @@ class MainTabBarViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    override func viewWillAppear(animated: Bool) {
+        self.addCenterTabBarButton();
+    }
+
     func removeTabbarItemText() {
         if let items = tabBar.items {
             for item in items {
                 item.title = ""
                 item.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0);
             }
+        }
+    }
+
+    func addCenterTabBarButton() {
+        let treeMapImage = UIImage(named: "treemap");
+        centerButton.frame = CGRectMake(0.0, 0.0, (treeMapImage?.size.width)!, (treeMapImage?.size.height)!);
+        centerButton.setBackgroundImage(treeMapImage, forState: .Normal);
+        centerButton.adjustsImageWhenHighlighted = false;
+        centerButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside);
+        let heightDifference = treeMapImage!.size.height - self.tabBar.frame.size.height;
+        if (heightDifference < 0) {
+            centerButton.center = self.tabBar.center;
+        }
+        else {
+            var center = self.tabBar.center;
+            center.y = center.y - heightDifference * 2;
+            centerButton.center = center;
+        }
+
+        self.view.addSubview(centerButton);
+    }
+
+    func buttonClicked(sender: UIButton!) {
+        if sender == centerButton {
+            self.selectedIndex = 2;
         }
     }
     /*
