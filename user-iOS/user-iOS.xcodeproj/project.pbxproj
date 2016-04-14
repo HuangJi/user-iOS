@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */; };
+		F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */; };
+		F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33641CBF5C2200471146 /* HomePageViewController.swift */; };
 		F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E711CB5470B0009F726 /* AppDelegate.swift */; };
 		F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E751CB5470B0009F726 /* Main.storyboard */; };
 		F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E781CB5470B0009F726 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GpointNavigationViewController.swift; path = Controller/GpointNavigationViewController.swift; sourceTree = "<group>"; };
+		F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+APPAdditions.swift"; path = "Tool/UIColor+APPAdditions.swift"; sourceTree = "<group>"; };
+		F40F33641CBF5C2200471146 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controller/HomePageViewController.swift; sourceTree = "<group>"; };
 		F44A3E6E1CB5470B0009F726 /* user-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "user-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A3E711CB5470B0009F726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44A3E761CB5470B0009F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F40F335D1CBF5B1C00471146 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
 		F44A3E651CB5470B0009F726 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +111,7 @@
 		F44A3E701CB5470B0009F726 /* user-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F40F335D1CBF5B1C00471146 /* Tool */,
 				F44A3E711CB5470B0009F726 /* AppDelegate.swift */,
 				F44A3E751CB5470B0009F726 /* Main.storyboard */,
 				F44A3E781CB5470B0009F726 /* Assets.xcassets */,
@@ -128,7 +143,9 @@
 		F44A3EA21CB642450009F726 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */,
 				F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */,
+				F40F33641CBF5C2200471146 /* HomePageViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -264,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */,
 				F44A3EA01CB642360009F726 /* MainTabBarViewController.swift in Sources */,
 				F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */,
+				F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */,
+				F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
