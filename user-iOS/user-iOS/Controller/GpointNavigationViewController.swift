@@ -12,7 +12,7 @@ class GpointNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var nav = self.navigationBar
+        let nav = self.navigationBar
         nav.barStyle = UIBarStyle.Black
         nav.barTintColor = UIColor.appTintBlueColor()
         nav.translucent = false
@@ -30,7 +30,6 @@ class GpointNavigationViewController: UINavigationController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
