@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109B68731CC66DB40087973D /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B68721CC66DB40087973D /* CardsViewController.swift */; };
+		109B68771CC673810087973D /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109B68751CC673810087973D /* CardTableViewCell.swift */; };
+		109B68781CC673810087973D /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 109B68761CC673810087973D /* CardTableViewCell.xib */; };
 		F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */; };
 		F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */; };
 		F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33641CBF5C2200471146 /* HomePageViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		109B68721CC66DB40087973D /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = Controller/CardsViewController.swift; sourceTree = "<group>"; };
+		109B68751CC673810087973D /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardTableViewCell.swift; path = Cell/CardTableViewCell.swift; sourceTree = "<group>"; };
+		109B68761CC673810087973D /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardTableViewCell.xib; path = Cell/CardTableViewCell.xib; sourceTree = "<group>"; };
 		F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GpointNavigationViewController.swift; path = Controller/GpointNavigationViewController.swift; sourceTree = "<group>"; };
 		F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+APPAdditions.swift"; path = "Tool/UIColor+APPAdditions.swift"; sourceTree = "<group>"; };
 		F40F33641CBF5C2200471146 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controller/HomePageViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		109B68741CC6734D0087973D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				109B68751CC673810087973D /* CardTableViewCell.swift */,
+				109B68761CC673810087973D /* CardTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		F40F335D1CBF5B1C00471146 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,13 +126,14 @@
 		F44A3E701CB5470B0009F726 /* user-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				109B68741CC6734D0087973D /* Cell */,
 				F40F335D1CBF5B1C00471146 /* Tool */,
+				F44A3EA21CB642450009F726 /* Controller */,
 				F44A3E711CB5470B0009F726 /* AppDelegate.swift */,
 				F44A3E751CB5470B0009F726 /* Main.storyboard */,
 				F44A3E781CB5470B0009F726 /* Assets.xcassets */,
 				F44A3E7A1CB5470B0009F726 /* LaunchScreen.storyboard */,
 				F44A3E7D1CB5470C0009F726 /* Info.plist */,
-				F44A3EA21CB642450009F726 /* Controller */,
 			);
 			path = "user-iOS";
 			sourceTree = "<group>";
@@ -144,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */,
+				109B68721CC66DB40087973D /* CardsViewController.swift */,
 				F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */,
 				F40F33641CBF5C2200471146 /* HomePageViewController.swift */,
 			);
@@ -257,6 +274,7 @@
 				F44A3E7C1CB5470B0009F726 /* LaunchScreen.storyboard in Resources */,
 				F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */,
 				F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */,
+				109B68781CC673810087973D /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,9 +301,11 @@
 			files = (
 				F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */,
 				F44A3EA01CB642360009F726 /* MainTabBarViewController.swift in Sources */,
+				109B68731CC66DB40087973D /* CardsViewController.swift in Sources */,
 				F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */,
 				F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */,
 				F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */,
+				109B68771CC673810087973D /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
