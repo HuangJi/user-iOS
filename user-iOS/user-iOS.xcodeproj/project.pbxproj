@@ -13,6 +13,11 @@
 		F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */; };
 		F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */; };
 		F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33641CBF5C2200471146 /* HomePageViewController.swift */; };
+		F40F33691CC9FD8B00471146 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33681CC9FD8B00471146 /* ProfilePageViewController.swift */; };
+		F40F336D1CCDE19D00471146 /* ProfileSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F336C1CCDE19D00471146 /* ProfileSettingTableViewController.swift */; };
+		F40F33781CCF8E6200471146 /* PointRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */; };
+		F40F337B1CCF8ECB00471146 /* PointRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */; };
+		F40F337C1CCF8ECB00471146 /* PointRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */; };
 		F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E711CB5470B0009F726 /* AppDelegate.swift */; };
 		F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E751CB5470B0009F726 /* Main.storyboard */; };
 		F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E781CB5470B0009F726 /* Assets.xcassets */; };
@@ -46,6 +51,11 @@
 		F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GpointNavigationViewController.swift; path = Controller/GpointNavigationViewController.swift; sourceTree = "<group>"; };
 		F40F33621CBF5BB300471146 /* UIColor+APPAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+APPAdditions.swift"; path = "Tool/UIColor+APPAdditions.swift"; sourceTree = "<group>"; };
 		F40F33641CBF5C2200471146 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomePageViewController.swift; path = Controller/HomePageViewController.swift; sourceTree = "<group>"; };
+		F40F33681CC9FD8B00471146 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilePageViewController.swift; path = Controller/ProfilePageViewController.swift; sourceTree = "<group>"; };
+		F40F336C1CCDE19D00471146 /* ProfileSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileSettingTableViewController.swift; path = Controller/ProfileSettingTableViewController.swift; sourceTree = "<group>"; };
+		F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointRecordTableViewController.swift; path = Controller/PointRecordTableViewController.swift; sourceTree = "<group>"; };
+		F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointRecordTableViewCell.swift; path = View/PointRecordTableViewCell.swift; sourceTree = "<group>"; };
+		F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PointRecordTableViewCell.xib; path = View/PointRecordTableViewCell.xib; sourceTree = "<group>"; };
 		F44A3E6E1CB5470B0009F726 /* user-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "user-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A3E711CB5470B0009F726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44A3E761CB5470B0009F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +113,15 @@
 			name = Tool;
 			sourceTree = "<group>";
 		};
+		F40F336E1CCDEA2800471146 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */,
+				F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F44A3E651CB5470B0009F726 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				109B68741CC6734D0087973D /* Cell */,
+				F40F336E1CCDEA2800471146 /* View */,
 				F40F335D1CBF5B1C00471146 /* Tool */,
 				F44A3EA21CB642450009F726 /* Controller */,
 				F44A3E711CB5470B0009F726 /* AppDelegate.swift */,
@@ -159,10 +179,13 @@
 		F44A3EA21CB642450009F726 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */,
 				F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */,
 				109B68721CC66DB40087973D /* CardsViewController.swift */,
 				F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */,
 				F40F33641CBF5C2200471146 /* HomePageViewController.swift */,
+				F40F33681CC9FD8B00471146 /* ProfilePageViewController.swift */,
+				F40F336C1CCDE19D00471146 /* ProfileSettingTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -272,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44A3E7C1CB5470B0009F726 /* LaunchScreen.storyboard in Resources */,
+				F40F337C1CCF8ECB00471146 /* PointRecordTableViewCell.xib in Resources */,
 				F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */,
 				F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */,
 				109B68781CC673810087973D /* CardTableViewCell.xib in Resources */,
@@ -299,9 +323,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40F336D1CCDE19D00471146 /* ProfileSettingTableViewController.swift in Sources */,
 				F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */,
+				F40F33691CC9FD8B00471146 /* ProfilePageViewController.swift in Sources */,
+				F40F33781CCF8E6200471146 /* PointRecordTableViewController.swift in Sources */,
 				F44A3EA01CB642360009F726 /* MainTabBarViewController.swift in Sources */,
 				109B68731CC66DB40087973D /* CardsViewController.swift in Sources */,
+				F40F337B1CCF8ECB00471146 /* PointRecordTableViewCell.swift in Sources */,
 				F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */,
 				F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */,
 				F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */,

@@ -17,10 +17,14 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.removeTabbarItemText()
-        self.addCenterTabBarButton()
-        self.drawTabBarFrame()
         UITabBar.appearance().tintColor = UIColor.appTintBlueColor()
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.addCenterTabBarButton()
+        self.drawTabBarFrame()
     }
 
     override func didReceiveMemoryWarning() {
