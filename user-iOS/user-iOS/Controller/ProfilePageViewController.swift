@@ -18,15 +18,15 @@ class ProfilePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pointRecordButton.layer.masksToBounds = true
-        self.pointRecordButton.layer.cornerRadius = 4.0
+        pointRecordButton.layer.masksToBounds = true
+        pointRecordButton.layer.cornerRadius = 4.0
 
-        self.accountSettingButton.layer.masksToBounds = true
-        self.accountSettingButton.layer.cornerRadius = 4.0
+        accountSettingButton.layer.masksToBounds = true
+        accountSettingButton.layer.cornerRadius = 4.0
 
-        self.accountSettingContainerView.hidden = true
+        accountSettingContainerView.hidden = true
 
-        self.profilePictureImage.image = UIImage(named: "KJC")
+        profilePictureImage.image = UIImage(named: "KJC")
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,11 +36,11 @@ class ProfilePageViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.addProfilePictureCircleMask()
+        addProfilePictureCircleMask()
     }
 
     func addProfilePictureCircleMask() {
-        let circlePath = UIBezierPath(roundedRect: CGRectMake(0, 0, self.profilePictureImage.frame.size.width, self.profilePictureImage.frame.size.height), cornerRadius: self.profilePictureImage.frame.size.height)
+        let circlePath = UIBezierPath(roundedRect: CGRectMake(0, 0, profilePictureImage.frame.size.width, profilePictureImage.frame.size.height), cornerRadius: profilePictureImage.frame.size.height)
 
         let circleLayer = CAShapeLayer()
         circleLayer.path = circlePath.CGPath
@@ -48,19 +48,19 @@ class ProfilePageViewController: UIViewController {
         circleLayer.strokeColor = UIColor.blackColor().CGColor
         circleLayer.lineWidth = 0
 
-        self.profilePictureImage.layer.mask = circleLayer
+        profilePictureImage.layer.mask = circleLayer
     }
 
     @IBAction func pointRecordButtonClicked(sender: UIButton) {
-        if self.pointRecordContainerView.hidden {
-            self.pointRecordButton.backgroundColor = UIColor.profileButtonEnableBackgroundColor()
-            self.pointRecordButton.setTitleColor(UIColor.profileButtonEnableTitleColor(), forState: .Normal)
+        if pointRecordContainerView.hidden {
+            pointRecordButton.backgroundColor = UIColor.profileButtonEnableBackgroundColor()
+            pointRecordButton.setTitleColor(UIColor.profileButtonEnableTitleColor(), forState: .Normal)
 
-            self.accountSettingButton.backgroundColor = UIColor.profileButtonDisableBackgroundColor()
-            self.accountSettingButton.setTitleColor(UIColor.profileButtonDisableTitleColor(), forState: .Normal)
+            accountSettingButton.backgroundColor = UIColor.profileButtonDisableBackgroundColor()
+            accountSettingButton.setTitleColor(UIColor.profileButtonDisableTitleColor(), forState: .Normal)
 
-            self.pointRecordContainerView.hidden = false
-            self.accountSettingContainerView.hidden = true
+            pointRecordContainerView.hidden = false
+            accountSettingContainerView.hidden = true
         }
 
         else {
@@ -69,15 +69,15 @@ class ProfilePageViewController: UIViewController {
     }
 
     @IBAction func accountSettingButtonClicked(sender: UIButton) {
-        if self.accountSettingContainerView.hidden {
-            self.accountSettingButton.backgroundColor = UIColor.profileButtonEnableBackgroundColor()
-            self.accountSettingButton.setTitleColor(UIColor.profileButtonEnableTitleColor(), forState: .Normal)
+        if accountSettingContainerView.hidden {
+            accountSettingButton.backgroundColor = UIColor.profileButtonEnableBackgroundColor()
+            accountSettingButton.setTitleColor(UIColor.profileButtonEnableTitleColor(), forState: .Normal)
 
-            self.pointRecordButton.backgroundColor = UIColor.profileButtonDisableBackgroundColor()
-            self.pointRecordButton.setTitleColor(UIColor.profileButtonDisableTitleColor(), forState: .Normal)
+            pointRecordButton.backgroundColor = UIColor.profileButtonDisableBackgroundColor()
+            pointRecordButton.setTitleColor(UIColor.profileButtonDisableTitleColor(), forState: .Normal)
 
-            self.accountSettingContainerView.hidden = false
-            self.pointRecordContainerView.hidden = true
+            accountSettingContainerView.hidden = false
+            pointRecordContainerView.hidden = true
         }
 
         else {

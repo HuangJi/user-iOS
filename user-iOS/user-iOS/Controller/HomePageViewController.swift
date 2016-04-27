@@ -20,20 +20,20 @@ class HomePageViewController: UIViewController, UISearchBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.tintColor = UIColor.whiteColor()
-        self.searchBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
-        self.searchBar.backgroundColor = UIColor.appTintBlueColor()
-        self.sendPointButton.layer.masksToBounds = true
-        self.sendPointButton.layer.cornerRadius = 4.0
+        view.tintColor = UIColor.whiteColor()
+        searchBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
+        searchBar.backgroundColor = UIColor.appTintBlueColor()
+        sendPointButton.layer.masksToBounds = true
+        sendPointButton.layer.cornerRadius = 4.0
 
-        self.qrcodeButton.layer.masksToBounds = true
-        self.qrcodeButton.layer.cornerRadius = 4.0
+        qrcodeButton.layer.masksToBounds = true
+        qrcodeButton.layer.cornerRadius = 4.0
 
-        self.currentPointView.layer.borderWidth = 1.1
-        self.currentPointView.layer.borderColor = UIColor.whiteColor().CGColor
+        currentPointView.layer.borderWidth = 1.1
+        currentPointView.layer.borderColor = UIColor.whiteColor().CGColor
 
-        self.currentEXP.layer.borderWidth = 1.1
-        self.currentEXP.layer.borderColor = UIColor.whiteColor().CGColor
+        currentEXP.layer.borderWidth = 1.1
+        currentEXP.layer.borderColor = UIColor.whiteColor().CGColor
         // Do any additional setup after loading the view.
     }
 
@@ -43,23 +43,23 @@ class HomePageViewController: UIViewController, UISearchBarDelegate {
     }
 
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        self.searchBar.showsCancelButton = true
+        searchBar.showsCancelButton = true
     }
 
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        self.searchBar.setShowsCancelButton(false, animated: true)
-        self.searchBar.text = ""
-        self.searchBar.endEditing(true)
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.text = ""
+        searchBar.endEditing(true)
     }
 
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        self.searchBar.setShowsCancelButton(false, animated: true)
-        self.searchBar.endEditing(true)
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.endEditing(true)
     }
 
     @IBAction func treeImageButtonClicked(sender: UIButton) {
-        self.treeCount = (self.treeCount + 1) % 10
-        self.treeImage.image = UIImage(named: "tree\(treeCount)")
+        treeCount = (treeCount + 1) % 10
+        treeImage.image = UIImage(named: "tree\(treeCount)")
     }
 
     /*
