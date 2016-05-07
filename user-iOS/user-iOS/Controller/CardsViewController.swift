@@ -22,9 +22,9 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.tintColor = UIColor.whiteColor()
-        self.searchBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
-        self.searchBar.backgroundColor = UIColor.appTintBlueColor()
+        view.tintColor = UIColor.whiteColor()
+        searchBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
+        searchBar.backgroundColor = UIColor.appTintBlueColor()
         // Do any additional setup after loading the view.
     }
 
@@ -34,18 +34,18 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
     }
 
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        self.searchBar.showsCancelButton = true
+        searchBar.showsCancelButton = true
     }
 
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        self.searchBar.setShowsCancelButton(false, animated: true)
-        self.searchBar.text = ""
-        self.searchBar.endEditing(true)
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.text = ""
+        searchBar.endEditing(true)
     }
 
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        self.searchBar.setShowsCancelButton(false, animated: true)
-        self.searchBar.endEditing(true)
+        searchBar.setShowsCancelButton(false, animated: true)
+        searchBar.endEditing(true)
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section:Int) -> Int {

@@ -12,7 +12,7 @@ class GpointNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let nav = self.navigationBar
+        let nav = navigationBar
         nav.barStyle = UIBarStyle.Black
         nav.barTintColor = UIColor.appTintBlueColor()
         nav.translucent = false

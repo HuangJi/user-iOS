@@ -15,4 +15,36 @@ extension UIColor {
     class func appTintBlueColor() -> UIColor {
         return UIColor(red: 45.0 / 255.0, green: 97.0 / 255.0, blue: 155.0 / 255.0, alpha: 1.0)
     }
+
+    class func profileButtonEnableBackgroundColor() -> UIColor {
+        return UIColor(red: 164.0 / 255.0, green: 186.0 / 255.0, blue: 211.0 / 255.0, alpha: 1.0)
+    }
+
+    class func profileButtonEnableTitleColor() -> UIColor {
+        return UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0)
+    }
+
+    class func profileButtonDisableBackgroundColor() -> UIColor {
+        return UIColor(red: 242.0 / 255.0, green: 243.0 / 255.0, blue: 245.0 / 255.0, alpha: 1.0)
+    }
+
+    class func profileButtonDisableTitleColor() -> UIColor {
+        return UIColor(red: 173.0 / 255.0, green: 176.0 / 255.0, blue: 181.0 / 255.0, alpha: 1.0)
+    }
+
+    class func pointRecordRedColor() -> UIColor {
+        return UIColor(red: 243.0 / 255.0, green: 134.0 / 255.0, blue: 105.0 / 255.0, alpha: 1.0)
+    }
+
+    class func pointRecordGreenColor() -> UIColor {
+        return UIColor(red: 171.0 / 255.0, green: 208.0 / 255.0, blue: 54.0 / 255.0, alpha: 1.0)
+    }
+
+    class func pointRecordBlueColor() -> UIColor {
+        return UIColor(red: 45.0 / 255.0, green: 97.0 / 255.0, blue: 155.0 / 255.0, alpha: 1.0)
+    }
+
+    class func pointRecordGrayColor() -> UIColor {
+        return UIColor(red: 173.0 / 255.0, green: 176.0 / 255.0, blue: 181.0 / 255.0, alpha: 1.0)
+    }
 }
