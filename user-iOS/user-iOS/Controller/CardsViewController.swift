@@ -15,7 +15,8 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
 
     let storeNameArray: NSArray = ["City Milk 城市首選 大安店", "五十嵐 復興店", "兔子兔子茶飲專賣店 內湖店"]
     let pointsArray: NSArray = [9, 22, 2]
-    let deadLineArray: NSArray = ["2016.01.01- 2016.10.20", "2016.01.01- 2016.10.20", "2016.01.01- 2016.10.20"]
+    let deadLineArray: NSArray = ["2016.01.01- 2016.10.20", "2016.02.01- 2016.10.20", "2016.04.01- 2016.10.20"]
+    let detailMessageArray: NSArray = ["集滿十點可兌換35元飲料。", "集滿十點可兌換35元飲料。", "集滿十點可兌換35元飲料。"]
     let imageNameArray: NSArray = ["citymilk2", "50lan", "rabbit"]
     let badgeArray: NSArray = [1, 0, 1]
     let sectionTitleArray: NSArray = ["常 用 集 點 卡", "集 點 卡"]
@@ -33,10 +34,12 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: - Configure Search Bar Outlet
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
         searchBar.showsCancelButton = true
     }
 
+    // MARK: - Search Bar Delegate
     func searchBarCancelButtonClicked(searchBar: UISearchBar) {
         searchBar.setShowsCancelButton(false, animated: true)
         searchBar.text = ""
@@ -48,6 +51,7 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         searchBar.endEditing(true)
     }
 
+    // MARK: - Table View Delegate and Data Source
     func tableView(tableView: UITableView, numberOfRowsInSection section:Int) -> Int {
         return storeNameArray.count
     }
@@ -94,14 +98,22 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         return 30.0
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let storeName = storeNameArray.objectAtIndex(indexPath.row)
+        let currentPoints = pointsArray.objectAtIndex(indexPath.row) as! Int
+        let deadLine = deadLineArray.objectAtIndex(indexPath.row)
+        let detailMessage = detailMessageArray.objectAtIndex(indexPath.row)
+        let cardInfo = NSDictionary.init(objects: [storeName,currentPoints,deadLine, detailMessage], forKeys: ["storeName", "currentPoints", "deadLine", "detailMessage"])
+        performSegueWithIdentifier("ShowCardDetailSegue", sender: cardInfo)
     }
-    */
+
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowCardDetailSegue" {
+            let cardDetailVC = segue.destinationViewController as! CardDetailViewController
+            cardDetailVC.cardInfo = sender as! NSDictionary
+        }
+    }
 
 }
