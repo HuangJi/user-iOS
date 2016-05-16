@@ -18,6 +18,10 @@
 		F40F33781CCF8E6200471146 /* PointRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */; };
 		F40F337B1CCF8ECB00471146 /* PointRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */; };
 		F40F337C1CCF8ECB00471146 /* PointRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */; };
+		F42152D71CE1DA28004186D1 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42152D61CE1DA28004186D1 /* CardInfoViewController.swift */; };
+		F42152D91CE21D39004186D1 /* stampsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42152D81CE21D39004186D1 /* stampsView.xib */; };
+		F42152DB1CE2218A004186D1 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42152DA1CE2218A004186D1 /* CardDetailViewController.swift */; };
+		F42152DD1CE423C7004186D1 /* CardInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F42152DC1CE423C7004186D1 /* CardInfoView.xib */; };
 		F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A3E711CB5470B0009F726 /* AppDelegate.swift */; };
 		F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E751CB5470B0009F726 /* Main.storyboard */; };
 		F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44A3E781CB5470B0009F726 /* Assets.xcassets */; };
@@ -56,6 +60,10 @@
 		F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointRecordTableViewController.swift; path = Controller/PointRecordTableViewController.swift; sourceTree = "<group>"; };
 		F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointRecordTableViewCell.swift; path = View/PointRecordTableViewCell.swift; sourceTree = "<group>"; };
 		F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PointRecordTableViewCell.xib; path = View/PointRecordTableViewCell.xib; sourceTree = "<group>"; };
+		F42152D61CE1DA28004186D1 /* CardInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardInfoViewController.swift; path = Controller/CardInfoViewController.swift; sourceTree = "<group>"; };
+		F42152D81CE21D39004186D1 /* stampsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = stampsView.xib; path = View/stampsView.xib; sourceTree = "<group>"; };
+		F42152DA1CE2218A004186D1 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardDetailViewController.swift; path = Controller/CardDetailViewController.swift; sourceTree = "<group>"; };
+		F42152DC1CE423C7004186D1 /* CardInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardInfoView.xib; path = View/CardInfoView.xib; sourceTree = "<group>"; };
 		F44A3E6E1CB5470B0009F726 /* user-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "user-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44A3E711CB5470B0009F726 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F44A3E761CB5470B0009F726 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 			children = (
 				F40F33791CCF8ECB00471146 /* PointRecordTableViewCell.swift */,
 				F40F337A1CCF8ECB00471146 /* PointRecordTableViewCell.xib */,
+				F42152D81CE21D39004186D1 /* stampsView.xib */,
+				F42152DC1CE423C7004186D1 /* CardInfoView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -179,9 +189,11 @@
 		F44A3EA21CB642450009F726 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				109B68721CC66DB40087973D /* CardsViewController.swift */,
+				F42152DA1CE2218A004186D1 /* CardDetailViewController.swift */,
+				F42152D61CE1DA28004186D1 /* CardInfoViewController.swift */,
 				F40F33771CCF8E6200471146 /* PointRecordTableViewController.swift */,
 				F40F33561CBEAAB700471146 /* GpointNavigationViewController.swift */,
-				109B68721CC66DB40087973D /* CardsViewController.swift */,
 				F44A3E9F1CB642360009F726 /* MainTabBarViewController.swift */,
 				F40F33641CBF5C2200471146 /* HomePageViewController.swift */,
 				F40F33681CC9FD8B00471146 /* ProfilePageViewController.swift */,
@@ -294,8 +306,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42152D91CE21D39004186D1 /* stampsView.xib in Resources */,
 				F44A3E7C1CB5470B0009F726 /* LaunchScreen.storyboard in Resources */,
 				F40F337C1CCF8ECB00471146 /* PointRecordTableViewCell.xib in Resources */,
+				F42152DD1CE423C7004186D1 /* CardInfoView.xib in Resources */,
 				F44A3E791CB5470B0009F726 /* Assets.xcassets in Resources */,
 				F44A3E771CB5470B0009F726 /* Main.storyboard in Resources */,
 				109B68781CC673810087973D /* CardTableViewCell.xib in Resources */,
@@ -323,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42152DB1CE2218A004186D1 /* CardDetailViewController.swift in Sources */,
 				F40F336D1CCDE19D00471146 /* ProfileSettingTableViewController.swift in Sources */,
 				F40F33571CBEAAB700471146 /* GpointNavigationViewController.swift in Sources */,
 				F40F33691CC9FD8B00471146 /* ProfilePageViewController.swift in Sources */,
@@ -331,6 +346,7 @@
 				109B68731CC66DB40087973D /* CardsViewController.swift in Sources */,
 				F40F337B1CCF8ECB00471146 /* PointRecordTableViewCell.swift in Sources */,
 				F44A3E721CB5470B0009F726 /* AppDelegate.swift in Sources */,
+				F42152D71CE1DA28004186D1 /* CardInfoViewController.swift in Sources */,
 				F40F33651CBF5C2200471146 /* HomePageViewController.swift in Sources */,
 				F40F33631CBF5BB300471146 /* UIColor+APPAdditions.swift in Sources */,
 				109B68771CC673810087973D /* CardTableViewCell.swift in Sources */,
