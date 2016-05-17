@@ -1,3 +1,6 @@
 .DS_Store
 user-iOS/user-iOS.xcodeproj/project.xcworkspace/xcuserdata/
 user-iOS/user-iOS.xcodeproj/xcuserdata/
+user-iOS/user-iOS.xcworkspace/
+Pods/
+*.lock

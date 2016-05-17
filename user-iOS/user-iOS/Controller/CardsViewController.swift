@@ -12,6 +12,7 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var cardsTableView: UITableView!
+    weak var delegate:PointTreeHttpProtocol?
 
     let storeNameArray: NSArray = ["City Milk 城市首選 大安店", "五十嵐 復興店", "兔子兔子茶飲專賣店 內湖店"]
     let pointsArray: NSArray = [9, 22, 2]
@@ -23,9 +24,12 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.delegate = self
         view.tintColor = UIColor.whiteColor()
         searchBar.setBackgroundImage(UIImage(), forBarPosition: .Any, barMetrics: .Default)
         searchBar.backgroundColor = UIColor.appTintBlueColor()
+        let ptc = PointTreeClient()
+        ptc.getPointList(self)
         // Do any additional setup after loading the view.
     }
 
@@ -116,4 +120,14 @@ class CardsViewController: UIViewController, UISearchBarDelegate, UITableViewDat
         }
     }
 
+}
+
+extension CardsViewController: PointTreeHttpProtocol {
+    func appDidGetPointList(data: AnyObject) {
+        print("Success: ", data)
+    }
+
+    func appGetPointListDidFail(data: AnyObject) {
+        print("Fail: ", data)
+    }
 }
